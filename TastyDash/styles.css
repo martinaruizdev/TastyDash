@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Libre Franklin", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    color: #212121;
+    background-color: #FCFCFC;
+    margin: auto;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav li{
+    list-style-type: none;
+    margin: 1rem;
+}
+
+nav img{
+    width: 150px;
+    margin-right: 18rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: #212121;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#registro{
+    color: #fcfcfc;
+    background: rgb(252,141,8);
+    background: linear-gradient(90deg, rgba(252,141,8,1) 0%, rgba(255,180,67,1) 100%);
+    border-radius: 50px;
+    padding: .6rem;
+}
+
+#registro:hover{
+    background: #FC8D08;
+    color: #3b3b3b;
+}
+
+#wrapper{
+    width: 90%;
+    margin: auto;
+}
+
+#hero-header{
+    display: flex;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1041%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(255%2c 145%2c 14%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c86 C 72%2c104.6 216%2c171 360%2c179 C 504%2c187 576%2c126.8 720%2c126 C 864%2c125.2 936%2c195.8 1080%2c175 C 1224%2c154.2 1368%2c52.6 1440%2c22L1440 560L0 560z' fill='rgba(227%2c 126%2c 5%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c547 C 72%2c511.2 216%2c378.6 360%2c368 C 504%2c357.4 576%2c489 720%2c494 C 864%2c499 936%2c388.6 1080%2c393 C 1224%2c397.4 1368%2c491.4 1440%2c516L1440 560L0 560z' fill='rgba(252%2c 141%2c 8%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1041'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+
+}
+
+#texto-hero{
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#texto-hero button, .card-desc button, .card button, .card-abm button, .card-prod button, .btn, .inp{
+    align-self: center;
+    border: 2px solid #FC8D08;
+    border-radius: 50px;
+    padding: .7rem 1rem;
+    background: none;
+    color: #FC8D08;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+#texto-hero button{
+    border: 2px solid #FCFCFC;
+    color: #FCFCFC;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+#texto-hero a{
+    color: #FCFCFC;
+    text-decoration: none;
+}
+
+span{
+    color: #FCFCFC;
+}
+
+#texto-hero h2{
+    font-weight: 400;
+    font-size: 18px;
+    margin: 1.4rem 0;
+    color: #282828;
+}
+
+#burrito{
+    background-color: #FC8D08;
+    width: 80%;
+}
+
+#burrito img{
+    width: 400px;
+    margin-left: 4.2rem;
+}
+
+.contenedor-cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: #e2e2e2;
+    max-width: 350px;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.190);
+}
+
+.card:hover{
+    background-color: #dddcdc;
+    transition: .3s;
+    cursor: pointer;
+    color: #212121;
+}
+
+.card h3{
+    background: none;
+}
+
+.card, .card-desc, .card-prod{
+    text-align: center;
+    margin: 2rem auto;
+    width: 50%;
+    border: 1px solid #e2e2e2;
+    border-radius: 16px;
+}
+
+.card img, .card-desc, .card-desc img, .card-prod img{
+    max-width: 250px;
+    min-height: 250px;
+    background-size: contain;
+}
+
+.descuento{
+    background-color: #FC8D08;
+    color: #EEEEEE;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.card-desc button, .card button, .card-abm button, .card-prod button, .btn{
+    padding: .5rem 1rem;
+}
+
+.card button, .card-abm button{
+    background-color: #fc8e0817;
+}
+
+.card-desc a, .card a, .card-abm a, .card-prod a{
+    color: #FC8D08;
+}
+
+#link{
+    color: #282828;
+    text-decoration: none;
+}
+
+.card-abm{
+    background-color: #e2e2e2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.190);
+    text-align: center;
+    margin: 2rem auto;
+    width: 20%;
+    height: 11rem;
+    border: 1px solid #e2e2e2;
+    border-radius: 16px;
+}
+
+.card-abm h3{
+    margin-bottom: 1rem;
+}
+
+.card-abm button, .card-prod button, .btn{
+    margin-bottom: .5rem;
+}
+
+.card-prod{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.190);
+    text-align: center;
+    margin: 2rem auto;
+    width: 25%;
+    border: 1px solid #e2e2e2;
+    border-radius: 16px;
+    padding: .5rem 0;
+}
+
+.card-prod p{
+    margin: .4rem 0;
+}
+
+.card-desc button{
+    margin: .8rem 0;
+}
+
+.btn{
+    margin: .5rem 0;
+}
+
+#categorias{
+    margin-top: 2.2rem;
+}
+
+#agregar h2{
+    margin-top: 2rem;
+}
+
+#abm h1{
+    margin-top: 1.8rem;
+    color: #FC8D08;
+}
+
+#descuentos h2{
+    margin-top: 1rem;
+}
+
+#section-naranja{
+    background-color: #FC8D08;
+    display: flex;
+}
+
+#section-naranja img, #section-hamb img{
+    width: 400px;
+}
+
+#section-naranja h3, #section-hamb h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#section-naranja p{
+    color: #FCFCFC;
+}
+
+#texto-naranja{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    margin: auto;
+}
+
+#section-hamb{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1020%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(238%2c 238%2c 238%2c 1)'%3e%3c/rect%3e%3cpath d='M1464 560L0 560 L0 316.55Q107.89 352.44%2c 72 460.34Q56.25 372.59%2c 144 356.84Q165.63 258.46%2c 264 280.09Q305.39 249.48%2c 336 290.87Q410 292.87%2c 408 366.86Q504.06 342.93%2c 528 438.99Q534.29 325.28%2c 648 331.58Q664.3 275.88%2c 720 292.17Q769.51 269.68%2c 792 319.19Q851.44 306.63%2c 864 366.08Q886.88 316.95%2c 936 339.83Q951.95 283.78%2c 1008 299.74Q1062.99 234.73%2c 1128 289.71Q1199.66 289.37%2c 1200 361.03Q1242.79 283.82%2c 1320 326.61Q1362.01 296.62%2c 1392 338.63Q1477.68 352.31%2c 1464 437.99z' fill='rgba(227%2c 227%2c 227%2c 1)'%3e%3c/path%3e%3cpath d='M1464 560L0 560 L0 448.94Q70.66 399.6%2c 120 470.25Q187.46 465.71%2c 192 533.18Q250.68 519.86%2c 264 578.53Q292.87 535.39%2c 336 564.26Q325.65 481.91%2c 408 471.57Q444.46 388.03%2c 528 424.5Q571.58 396.07%2c 600 439.65Q674.82 442.47%2c 672 517.29Q745.8 519.09%2c 744 592.89Q713.9 490.79%2c 816 460.69Q855.67 380.37%2c 936 420.04Q1010.31 374.35%2c 1056 448.66Q1123.51 444.17%2c 1128 511.68Q1210.85 474.52%2c 1248 557.37Q1293.65 531.02%2c 1320 576.68Q1361.09 545.77%2c 1392 586.86Q1409.76 532.62%2c 1464 550.38z' fill='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1020'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    display: flex;
+    overflow: hidden;
+}
+
+#section-hamb img{
+    width: 350px;
+    transform: rotate(-15deg);
+}
+
+#section-hamb h3{
+    color: #FC8D08;
+}
+
+#texto-hamb{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    margin: auto;
+}
+
+#texto-hamb p{
+    margin-top: 1rem;
+}
+
+.inp{
+    padding: .6rem;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9d9d9;
+    height: 2.5rem;
+}
+
